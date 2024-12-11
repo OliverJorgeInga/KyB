@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        .hidden-navbar {
+            transform: translateY(-100%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .shadow-card{
+            box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+        }
+
+        summary{
+            list-style: none;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="">
+    <nav class="flex h-[70px] w-full fixed z-50 bg-[#9c0026] top-0 left-0 items-center justify-between ">
+        <div class="h-full w-full absolute z-40">
+
+        </div>
+
+        <div class="left">
+            <div class="w-[70px] ">
+                <img src="img/logo.svg" style="height: 70px;" alt="">
+            </div>
+        </div>
+
+        <div class="btnHamburguesa ">
+            <div>
+                <img src="img/bar-icon.svg" alt="">
+            </div>
+        </div>
+        
+        <div class="mid hidden">
+            <ul>
+                <li><a href="">INICIO</a></li>
+                <li><a href="">PRODUCTOS</a></li>
+                <li><a href="">ENTREGAS</a></li>
+                <li><a href="">CONTACTO</a></li>
+            </ul>
+        </div>
+
+        
+        <div class="right hidden">
+            <img src="img/cart-icon.svg" alt="">
+        </div>
+    </nav>
+
+    <header id="navbar"  class="overflow-hidden  ">
+        <div class="h-[330px]  relative flex justify-center items-center">
+            <div class="h-full w-full bg-transparent absolute z-40">
+                
+            </div>
+            
+           
+            <div class="h-full w-full bg-no-repeat bg-cover bg-center absolute inset-0 z-10" style="background-image: url(img/banner-img.jpg);">
+                
+            </div>
+            <!-- arreglar el margin top ya que no esta centrado verticalmente correcto-->
+            <div class="relative z-50 text-sm text-white flex flex-col items-center px-10 text-center gap-3 ">
+                <p class="font-bold text-2xl">El regalo perfecto para los pequeños de la casa</p>
+                <p class="font-normal text-base">Llena de alegria y momentos inolvidables con nuestro juguetes unicos</p>
+                <a href="#productos" class="font-bold inline-block bg-transparent px-4 py-2 rounded-md">Ver productos</a>
+            </div>
+        </div>
+    </header>
+    
+
+    <main>
+        <div>
+
+            <section id="productos" class=" container px-5 py-20">
+                <header>
+                    <h2 class="font-bold text-center text-3xl">Productos</h2>
+                </header>
+
+                <main>
+                    <div class="productScroll flex overflow-x-auto gap-8 py-6 px-2 mt-6">
+                        
+                        <article class="shadow-lg min-w-[280px] ">
+                            <div>
+                                <img src="img/producto.png" alt="">
+                            </div>
+                            <div class="p-4">
+                                <div class="flex justify-between">
+                                    <span class="font-bold text-md">Nombre producto</span>
+                                    <span class="font-bold text-md">S/ 16.00</span>
+                                </div>
+                    
+                                <div class="flex justify-between font-bold text-xs text-center gap-2 mt-5">
+                                    <a href="" class="bg-red-navi flex-1 text-white py-2 rounded-md">Comprar ahora</a>
+                                    <button class="border-red-navi border-2 flex-1 py-2 rounded-md">Añadir al carrito</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="shadow-lg min-w-[280px] ">
+                            <div>
+                                <img src="img/producto.png" alt="">
+                            </div>
+                            <div class="p-4">
+                                <div class="flex justify-between">
+                                    <span class="font-bold text-md">Nombre producto</span>
+                                    <span class="font-bold text-md">S/ 16.00</span>
+                                </div>
+                    
+                                <div class="flex justify-between font-bold text-xs text-center gap-2 mt-5">
+                                    <a href="" class="bg-red-navi flex-1 text-white py-2 rounded-md">Comprar ahora</a>
+                                    <button class="border-red-navi border-2 flex-1 py-2 rounded-md">Añadir al carrito</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="shadow-lg min-w-[280px] ">
+                            <div>
+                                <img src="img/producto.png" alt="">
+                            </div>
+                            <div class="p-4">
+                                <div class="flex justify-between">
+                                    <span class="font-bold text-md">Nombre producto</span>
+                                    <span class="font-bold text-md">S/ 16.00</span>
+                                </div>
+                    
+                                <div class="flex justify-between font-bold text-xs text-center gap-2 mt-5">
+                                    <a href="" class="bg-red-navi flex-1 text-white py-2 rounded-md">Comprar ahora</a>
+                                    <button class="border-red-navi border-2 flex-1 py-2 rounded-md">Añadir al carrito</button>
+                                </div>
+                            </div>
+                        </article>
+                 
+                    </div>
+                </main>
+            </section>
+
+            <section id="pago" class=" container px-5 py-20">
+                <div>
+                    <h2 class="font-bold text-center text-3xl">Proceso de compra</h2>
+                    
+                    <div>
+                        <div>
+                            <h3>Paso 1</h3>
+                            <p>Explora nuestro catalo y añade al carrito</p>
+                        </div>
+
+                        <div>
+                            <h3>Paso 1</h3>
+                            <p>Selecciona </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="clientes" class="bg-[#D9D9D9] px-5 py-20">
+                <header>
+                    <h2 class="font-bold text-center text-3xl">Clientes Satisfechos</h2>
+                </header>
+
+                <main>
+                    <div class="mt-20 ">
+                        <article class="bg-white relative py-5 px-10 rounded-lg">
+                            <div class="absolute -top-12 left-1/2 transform -translate-x-1/2">
+                                <img src="img/iconClient.svg"  class="w-20" alt="">
+                            </div>
+                            <p class="py-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas sunt ea quis corporis, aliquid a vitae laborum neque quos? Corporis.</p>
+                            <p class="text-end">Lorem, ipsum dolor.</p>
+                        </article>
+                    </div>
+                </main>
+            </section>
+
+            <section id="preguntas" class=" px-5 py-20">
+                <h2 class="font-bold text-center text-3xl">Preguntas frecuentes</h2>
+                <div class="mt-5">
+                    <details class="border-b-2 border-[#d9d9d9] p-3 py-5">
+                        <summary class="flex items-center justify-between">
+                            ¿Qué metodos de pagos 
+                            <i class="fa-solid fa-plus "></i>
+                        </summary>
+                        <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente asperiores quam fuga voluptatibus veritatis consectetur natus illo nihil fugit ex! Quam consectetur reprehenderit unde architecto mollitia! Similique aliquid qui laborum.</p>
+                    </details>
+    
+                    <details class="border-b-2 border-[#d9d9d9] p-3 py-5">
+                        <summary class="flex items-center justify-between">
+                            ¿Qué metodos de pagos se acepta
+                            <i class="fa-solid fa-plus "></i>
+                        </summary>
+                        <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente asperiores quam fuga voluptatibus veritatis consectetur natus illo nihil fugit ex! Quam consectetur reprehenderit unde architecto mollitia! Similique aliquid qui laborum.</p>
+                    </details>
+    
+                    <details class="border-b-2 border-[#d9d9d9] p-3 py-5">
+                        <summary class="flex items-center justify-between">
+                            ¿Qué metodos de pagos 
+                            <i class="fa-solid fa-plus "></i>
+                        </summary>
+                        <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente asperiores quam fuga voluptatibus veritatis consectetur natus illo nihil fugit ex! Quam consectetur reprehenderit unde architecto mollitia! Similique aliquid qui laborum.</p>
+                    </details>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer class="bg-black">
+        <div class="text-white container mx-auto ">
+            <div class="flex flex-col justify-center gap-10 text-center px-5">
+                <div>
+                    <div class="">
+                        <img src="img/logo.svg" class="mx-auto" width="100px" alt="">
+                    </div>
+    
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, hic!</p>
+                </div>
+    
+                <div>
+                    <p class="font-bold">Siguenos</p>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                    Facebook.com
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="">
+                                    <i class="fa-brands fa-instagram"></i>
+                                    Instagram.com
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="">
+                                    <i class="fa-brands fa-tiktok"></i>
+                                    Tiktok.com
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+    
+                <nav>
+                    <p class="font-bold">Secciones</p>
+                    <ul>
+                        <li><a href="">Inicio</a></li>
+                        <li><a href="">Productos</a></li>
+                        <li><a href=""></a></li>
+                        <li><a href="">Contacto</a></li>
+                    </ul>
+                </nav>
+                
+                <div>
+                    <p class="font-bold">Contacto</p>
+                    <ul>
+                        <li>Direcci&oacute;n: asdasd</li>
+                        <li>Tel&eacute;fono: 351351</li>
+                        <li></li>
+                        <li>Correo: asdasdas@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <p class=" text-center mt-8 border-t-2 py-4 px-5">C 2024 Desarrollado por Couvia. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    
+    <script>
+        const navbar = document.querySelector("nav");
+        let lastScrollY = window.scrollY;
+    
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > lastScrollY) {
+                console.log(lastScrollY);
+                
+                navbar.classList.add("hidden-navbar");
+            } else {
+                console.log(window.scrollY );
+                
+                navbar.classList.remove("hidden-navbar");
+            }
+            lastScrollY = window.scrollY;
+        });
+
+       
+    </script>
+    
+
+</body>
+</html>
